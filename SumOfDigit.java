@@ -45,7 +45,7 @@ public static void sod4(int a){
             sum +=d;
             a = a/10;
         }
-        System.out.println("The sum is "+ sum);
+        System.out.println("The sum of digits is" +sum);
 }
 
     public static void main(String args[]){
