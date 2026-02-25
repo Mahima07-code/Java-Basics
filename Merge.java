@@ -6,44 +6,58 @@ public class Merge {
 
    
 
-    public static void inputArray(int[] var0, int var1) {
-      System.out.println("enter the elements of array ");
+    public static void inputArray(int[] x, int size) {
+        System.out.println("enter the elements of array ");
 
-      for(int var2 = 0; var2 < var1; ++var2) {
-         var0[var2] = s1.nextInt();
-      }
-
-   }
-
-   public static void mergeArray(int []x, int[]y, int size1, int size2){
-
-    int size3 = x.length+ y.length;
-    int p[] = new int[size3];
-    x[size1] = 9999999999;
-    y[size2] = 9999999999;
-    
-
-    for(int i =0; i<size3; i++){
-        if(x[i]<y[i]){
-            p[i] =x[i];
-            x[i]=x[i+1];
+        for(int i = 0; i < size; i++) {
+             x[i] = s1.nextInt();
         }
-        else if(y[i]<x[i]){
-            p[i] =y[i];
-            y[i]=y[i+1];
-        }
-    }
-    
 
    }
 
    public static void showArray(int x[],int size){
         
         for(int i=0; i<size; i++){
-            System.out.println(x[i]);
+            System.out.println(x[i]+" ");
     
         }
     }
+
+   public static void mergeArray(int []x, int[]y, int z[],int size1, int size2){
+        int i,j,k;
+        for(i =0,j=0,k=0; i<size1&&j<size2;){
+            if(x[i]<y[j]){
+                z[k]=x[i];
+                k++;
+                i++;
+            }
+            else if(x[i]>y[j]){
+                z[k]=y[j];
+                k++;
+                j++;
+            }
+            
+        }
+
+        if(i<size1){
+            while(i<size1){
+                z[k]=x[i];
+                k++;
+                i++;
+            }
+        }
+        if(j<size2){
+            while(j<size2){
+                z[k]=y[j];
+                k++;
+                j++;
+            }
+        }
+    
+
+   }
+
+   
     public static void main(String []args){
 
         System.out.println("enter the size of first array");
@@ -59,9 +73,20 @@ public class Merge {
         int size3 = size1+size2;
         int z[]=new int[size3];
         
-        mergeArray(x, y, size1, size2);
+        mergeArray(x, y, z,size1, size2);
         
+        System.out.println("First array is");
+
+        showArray(x, size1);
+
+        System.out.println("second  array is");
+
+        showArray(y, size2);
+
+        System.out.println("After merging third array is");
+
         showArray(z, size3);
+
 
 
     } 
