@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Insert {
 
-     static Scanner s1 = new Scanner(System.in);
+    static Scanner s1 = new Scanner(System.in);
 
     public static void inputArray(int p[],int size){
         
