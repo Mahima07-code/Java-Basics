@@ -1,3 +1,7 @@
+// QUES:- 
+// To find the multiplication of the two input matrix
+
+
 import java.util.Scanner;
 
 public class MultiplyMatrix {
