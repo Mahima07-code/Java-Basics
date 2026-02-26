@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Matrix {
+public class SumMatrix {
     static Scanner s1= new Scanner(System.in);
 
     public static void inputMatrix(int x[][], int r, int c){
