@@ -1,3 +1,6 @@
+// QUES:-
+// TO find the sum of each row in an array or matrix
+
 import java.util.Scanner;
 
 

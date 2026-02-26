@@ -1,6 +1,6 @@
 /* write a fucntion search that will take an array and its size and the element to be search as an argument, 
  funtion will return -1 in case element not found 
- otherwise will index of teh element of the aaray 
+ otherwise will return index of the element of the aaray .
  */
 import java.util.*;
 

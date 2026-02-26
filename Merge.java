@@ -1,3 +1,7 @@
+// QUES:-
+// you have taken two array input assuming in sorted order.
+// You have to merge these sorted array and form a new array which is sorted also.
+
 import java.util.*;
 
 public class Merge {

@@ -1,3 +1,6 @@
+// QUES:-
+// To find the sum of two matrices (take input)
+
 import java.util.Scanner;
 
 public class SumMatrix {

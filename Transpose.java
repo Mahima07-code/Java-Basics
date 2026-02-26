@@ -1,3 +1,6 @@
+// QUES:-
+// To tranpose a mtrix i.e convert rows into columns.
+
 import java.util.Scanner;
 
 
