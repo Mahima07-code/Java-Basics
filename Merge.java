@@ -29,7 +29,7 @@ public class Merge {
 
    public static void mergeArray(int []x, int[]y, int z[],int size1, int size2){
         int i,j,k;
-        for(i =0,j=0,k=0; i<size1&&j<size2;){
+        for(i =0,j=0,k=0; i<size1 && j<size2;){
             if(x[i]<y[j]){
                 z[k]=x[i];
                 k++;
